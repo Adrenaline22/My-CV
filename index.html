@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <title>Прекрасный сайт v1</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css">
+    <link rel="shortcut icon" href="/image/ikonka.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body class="container12">
+<div>
+    <img src="/image/logo.svg" alt="Image1" class="logo_index">
+</div>
+<div class="pdf"><button id="button">Скачать в PDF</button></div>
+<div>
+    <div class="left-column_1">
+        <div class="left-column_11">
+            <div id="toast" class="toast">
+                <span id="toast-message">Загрузка</span>
+                <span class="loading">...</span>
+            </div>
+            <script type="text/javascript" src="/js/index.js"> </script>
+            <div id="questionsList" class="typing-effect"></div>
+
+            <br>
+            <br>
+        </div>
+        <div class="chat-input-container">
+            <form id="topicForm">
+                <input type="text" id="topic" name="topic"  placeholder="Введите запрос..." required>
+                <button  type="submit">
+                </button>
+            </form>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="right-column">
+        <div>
+            <img src="/image/vkhod.svg" alt="Image10" class="icon"></a>
+        </div>
+        <div>
+            <a href="/admin" class="button">
+                <img src="/image/adminka.svg" alt="Image80" class="admin"></a>
+        </div>
+        <a href="/logout" class="btn-primary-logout">Выйти</a>
+        <div >
+            <div >
+                <h1>Здравствуйте, <span th:text="${username}"></span>!</h1>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>
+
+
+
+
+
+

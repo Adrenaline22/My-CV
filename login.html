@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аутентификация чатика</title>
+    <link rel="stylesheet" href="" th:href="@{/css/styles.css}" type="text/css">
+    <link rel="shortcut icon" href="/image/ikonka.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body class="body">
+<div>
+    <img src="/image/logo.svg" alt="Image1" class="logo">
+
+</div>
+<div>
+    <img src="/image/points.svg" alt="Image2" class="points">
+</div>
+<div>
+    <img src="/image/setka.svg" alt="Image3" class="setka">
+</div>
+<div>
+    <img src="/image/lines.svg" alt="Image4" class="lines">
+</div>
+<div>
+    <img src="/image/lines2.svg" alt="Image5" class="lines2">
+</div>
+<div class="header">
+    <button onclick="window.location.href='/register'" class="login-button">Регистрация</button>
+</div>
+<div class="container_login">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 form-wrapper">
+            <form th:action="@{/login}" method="post">
+                <h1>Авторизация</h1>
+                <div th:if="${param.error}">
+                    <div class="alert alert-danger">Неверное имя пользователя или пароль.</div>
+                </div>
+
+                <div th:if="${param.logout}">
+                    <div class="alert alert-info">
+                        Можете не возвращаться.</div>
+                </div>
+
+                <div class="login-form-group">
+                    <input type="text" class="form-control-login" id="username"
+                           name="username" placeholder="Введите электронную почту"
+                           autofocus="autofocus">
+
+                    <input type="password" id="password" name="password"
+                           class="form-control-login" placeholder="Введите пароль" />
+                </div>
+                <input type="submit" name="login-submit"
+                       id="login-submit"
+                       class="btn-primary-login"
+                       value="Войти" />
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
