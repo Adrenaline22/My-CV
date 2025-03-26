@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Административная панель</title>
+    <link rel="shortcut icon" href="/image/ikonka.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="body_admin">
+<div>
+    <img src="/image/logo.svg" alt="Image1" class="logo_admin">
+</div>
+<h1 class="admin_h1_panel">Административная панель чатика</h1>
 
+<h2 class="admin_h2_panel">Список пользователей</h2>
+<div class="table-container">
+    <table class="table_admin" id="usersTable">
+        <thead>
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Email</th>
+            <th>Роль</th>
+            <th>Действия</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<button onclick="window.location.href='/'" class="admin-button">Выход</button>
+<script src="/js/admin.js"></script>
+</body>
+</html>
