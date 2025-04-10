@@ -41,5 +41,5 @@ HTML, CSS, Sass, JavaScript, React
 
 
 ## Пройденные курсы:
-- Stepik: Python, SQL
+- Stepik: Python, SQL, Java
 - Яндекс.Практикум: Backend, Frontend (незавершены)
