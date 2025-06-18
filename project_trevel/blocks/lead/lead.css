@@ -1,0 +1,24 @@
+.lead {
+  max-width: 984px;
+  margin: 0 auto 92px auto;
+  padding: 0;
+}
+/* Стили для иного расширениия */
+@media screen and (max-width: 1250px) {
+  .lead {
+    max-width: 928px;
+  }
+}
+/* Стили для иного расширениия */
+@media screen and (max-width: 950px) {
+  .lead {
+    max-width: 100%;
+    margin: 0 auto 88px auto;
+  }
+}
+/* Стили для иного расширениия (Mobile) */
+@media screen and (max-width: 375px) {
+  .lead {
+    margin: 0 auto 64px auto;
+  }
+}

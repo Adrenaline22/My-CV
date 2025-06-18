@@ -1,0 +1,9 @@
+.place__site {
+  align-self: end;
+}
+/* Стили для иного расширениия (Mobile) */
+@media screen and (max-width: 767px) {
+  .place__site {
+    margin: 0 16px 0 16px;
+  }
+}

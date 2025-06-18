@@ -1,0 +1,23 @@
+.lead__subtitle {
+  margin: 0 auto 64px;
+  padding: 0;
+  max-width: 640px;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+/* Среднее между 1280 и 1024 (Laptop) */
+@media screen and (max-width: calc(1280px - ((1280px - 1024px) / 2))) {
+  .lead__subtitle {
+    margin: 0 auto 56px;
+  }
+}
+/* Стили для иного расширениия (Mobile) */
+@media screen and (max-width: 700px) {
+  .lead__subtitle {
+    margin: 0 auto 40px;
+    max-width: 288px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

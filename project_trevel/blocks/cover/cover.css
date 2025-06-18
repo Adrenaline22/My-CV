@@ -1,0 +1,20 @@
+.cover {
+  margin: 0 auto 92px auto;
+  max-width: 1184px;
+  width: 100%;
+  background-image: url("../../images/cover__background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 850px) {
+  .cover {
+    margin: 0 auto 88px auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover {
+    margin: 0 auto 64px auto;
+  }
+}
