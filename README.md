@@ -27,7 +27,9 @@ HTML, CSS, Sass, JavaScript, React
 ### Учебные проекты 2022-2023
 - Разработка моделей для прогнозирования уровня воды (LSTM, Gradient Boosting, SNN, Spiking NN). Анализ влияния прогнозов на промышленные объекты
 - Прогнозирование уровня воды в Республике Башкортостан.Использование Gradient Boosting, Polynomial Regression, RNN, SNN.Реализация web-приложения на Django.
-- <img src="images/2.png" alt="Пример" width="400" height="auto" />
+- <img src="images/2.png" alt="Пример" width="600" height="auto" />  <img src="images/3.png" alt="Пример" width="600" height="auto" />
+- <img src="images/4.png" alt="Пример" width="600" height="auto" />  <img src="images/5.png" alt="Пример" width="600" height="auto" />
+- <img src="images/6.png" alt="Пример" width="600" height="auto" />  <img src="images/7.png" alt="Пример" width="600" height="auto" />
 
 
 ### Учебные проекты 2023-2024
